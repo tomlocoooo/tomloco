@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOMLOCO - Tienda de Peluches</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+    header {
+      background-color: #e91e63;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #f06292;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      background-color: #f8bbd0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background-color: #ffe4ec;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .cta a {
+      background-color: #e91e63;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #e91e63;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>TOMLOCO</h1>
+    <p>Muñelocos y Squishmallows a los mejores precios</p>
+  </header>
+
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#unete">Únete</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h2>¡Bienvenido a TOMLOCO!</h2>
+    <p>Encuentra peluches adorables, máquinas expendedoras y accesorios únicos.</p>
+  </section>
+
+  <section class="section" id="productos">
+    <h2 style="text-align:center; margin-bottom: 30px;">Catálogo de Productos</h2>
+    <div class="products">
+      <!-- Squishmallow Gordon -->
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61pXXzPWy6L._AC_SL1000_.jpg" alt="Squishmallow Gordon Tiburón">
+        <h3>Squishmallow Gordon</h3>
+        <p>$180 MXN</p>
+      </div>
+      <!-- Squishmallow Rosie -->
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61hf44FFrTL._AC_SL1000_.jpg" alt="Squishmallow Rosie Cerdita">
+        <h3>Squishmallow Rosie</h3>
+        <p>$180 MXN</p>
+      </div>
+      <!-- Squishmallow Archie -->
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61oFgYvhP+L._AC_SL1000_.jpg" alt="Squishmallow Archie Axolote">
+        <h3>Squishmallow Archie</h3>
+        <p>$180 MXN</p>
+      </div>
+      <!-- Máquina Expendedora -->
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81U72XDE8gL._AC_SL1500_.jpg" alt="Máquina Expendedora de Juguetes">
+        <h3>Máquina Expendedora</h3>
+        <p>$3200 MXN</p>
+      </div>
+      <!-- Máquina Arcade -->
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81nIKsGhRuL._AC_SL1500_.jpg" alt="Máquina Tipo Arcade">
+        <h3>Máquina Tipo Arcade</h3>
+        <p>$4200 MXN</p>
+      </div>
+      <!-- Accesorios - Cápsulas -->
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61C-QUncf6L._AC_SL1200_.jpg" alt="Cápsulas Vacías para Máquina">
+        <h3>Cápsulas Vacías</h3>
+        <p>$250 MXN</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="#unete">¡Quiero unirme!</a>
+    </div>
+  </section>
+
+  <section class="section" id="unete">
+    <h2 style="text-align:center; margin-bottom: 20px;">¿Cómo puedes unirte?</h2>
+    <ol style="max-width: 700px; margin: auto; line-height: 1.8;">
+      <li><strong>1er Paso:</strong> Regístrate en nuestra página web con tu nombre completo y correo.</li>
+      <li><strong>2do Paso:</strong> Llena tus datos de pedido y elige un método de pago.</li>
+      <li><strong>3er Paso:</strong> ¿Quieres una máquina? Mándanos un correo para configurarla con producto constante.</li>
+      <li><strong>4to Paso:</strong> Recibe tu pedido en un máximo de 9 días. ¡Déjanos tu opinión!</li>
+    </ol>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2 style="text-align:center; margin-bottom: 20px;">Contáctanos</h2>
+    <p style="text-align:center;">Escríbenos a: <strong>contacto@tomloco.mx</strong></p>
+  </section>
+
+  <footer>
+    <p>Gracias por visitar TOMLOCO 💖</p>
+  </footer>
+
+</body>
+</html>
